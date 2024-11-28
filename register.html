@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Page</title>
+    <link rel="icon" href="imgs/head-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo-container">
+                <img src="imgs/logo-bxdn-.png" alt="Ảnh logo bến xe ĐN nè" id="logo-img">
+                <h1 id="page-name">Coach management</h1>
+                <img src="imgs/user-icon.png" alt="Ảnh user nè" id="user-img">
+                <a href="#" id="user-name">Nx001</a>
+            </div>
+
+            <ul id="nav">
+                <li class="active"><a href="#">Đăng ký đỗ xe</a></li>
+                <li><a href="#">Thông tin nhà xe</a></li>
+                <li><a href="plan_tuyenxe.html">Cập nhật lịch trình</a></li>
+                <li><a href="#">Quản lý xe</a></li>
+                <li><a href="#">Quản lý tài xế</a></li>
+            </ul>
+        </div>
+
+        <div id="register-content">
+            <div class="registration-form">
+                <h2>Đăng Ký Đỗ Xe</h2>
+                <form>
+                    <div class="user-container">
+                        <label for="ownerName">Tên chủ xe</label>
+                        <input type="text" id="ownerName" name="ownerName" required>
+
+                        <label for="id">Căn cước công dân</label>
+                        <input type="text" id="id" name="id" required>
+
+                        <label for="phoneNumber">Số điện thoại liên hệ</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="address">Địa chỉ</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+
+                    <div class="car-container">
+                        <label for="licensePlate">Biển số xe</label>
+                        <input type="text" id="licensePlate" name="licensePlate" required>
+
+                        <label for="vehicleType">Loại xe</label>
+                        <select id="vehicleType" name="vehicleType" required>
+                            <option value="car">Ô tô</option>
+                            <option value="truck">Xe tải</option>
+                            <option value="bus">Xe buýt</option>
+                            <option value="motorcycle">Xe máy</option>
+                        </select>
+
+                        <label for="brand">Hãng xe</label>
+                        <input type="text" id="brand" name="brand" required>
+
+                        <label for="color">Màu xe</label>
+                        <input type="text" id="color" name="color" required>
+
+                        <label for="seats">Số chỗ ngồi</label>
+                        <input type="number" id="seats" name="seats" required>
+                    </div>
+
+                    <div class="registerInfor-container">
+                        <label for="registrationDate">Ngày đăng ký</label>
+                        <input type="date" id="registrationDate" name="registrationDate" required>
+
+                        <label for="parkingDuration">Thời gian đỗ xe</label>
+                        <input type="text" id="parkingDuration" name="parkingDuration" required>
+
+                        <label for="preferredLocation">Vị trí đỗ xe mong muốn</label>
+                        <input type="text" id="preferredLocation" name="preferredLocation">
+
+                        <label for="purpose">Mục đích đỗ xe</label>
+                        <input type="text" id="purpose" name="purpose" required>
+
+                        <label for="documents">Các giấy tờ liên quan</label>
+                        <input type="file" id="imageUpload" name="images" accept="image/*" multiple required>
+
+                        <label for="notes">Ghi chú thêm</label>
+                        <textarea id="notes" name="notes" rows="4"></textarea>
+                    </div>
+                </form>
+                <button type="submit">Đăng Ký</button>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p><strong>Về chúng tôi</strong></p>
+                    <p>Tuyển dụng</p>
+                    <p>Tin tức</p>
+                    <p>Giới thiệu</p>
+
+                </div>
+                <div class="support">
+                    <p><strong>Hỗ trợ</strong></p>
+                    <p>Hướng dẫn đăng kí</p>
+                    <p>Câu hỏi thường gặp</p>
+                    <p>Phần mềm đặt xe</p>
+                </div>
+                <div class="address">
+                    <p class="address">123 Street Name, City, State, ZIP</p>
+                    <p class="email">Email: example@email.com</p>
+                    <p class="phone">Phone: (123) 456-7890</p>
+                </div>
+
+                <div class="social-media">
+                    <strong>
+                        <p>Kết nối</p>
+                    </strong>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <!-- Add social media icons as needed -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2021 eDanang Coaching Management System - All rights reserved</p>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
