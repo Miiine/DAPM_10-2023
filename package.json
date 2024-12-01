@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+        "gh-pages": "^6.2.0"
+    },
+    "homepage": "https://miiine.github.io/DAPM_10-2023",
+    "scripts": {
+        "deploy": "gh-pages -d ."
+    }
+}

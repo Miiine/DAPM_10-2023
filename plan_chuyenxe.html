@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Page</title>
+    <link rel="icon" href="imgs/head-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="plan.css">
+    <script src="plan.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo-container">
+                <img src="imgs/logo-bxdn-.png" alt="Ảnh logo bến xe ĐN nè" id="logo-img">
+                <h1 id="page-name">Coach management</h1>
+                <img src="imgs/user-icon.png" alt="Ảnh user nè" id="user-img">
+                <a href="#" id="user-name">Nx001</a>
+            </div>
+
+            <ul id="nav">
+                <li><a href="register.html">Đăng ký đỗ xe</a></li>
+                <li><a href="#">Thông tin nhà xe</a></li>
+                <li class="active"><a href="#">Cập nhật lịch trình</a></li>
+                <li><a href="#">Quản lý xe</a></li>
+                <li><a href="#">Quản lý tài xế</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div id="content-name">
+                <h1>Cập nhật lịch trình</h1>
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+            </div>
+
+            <ul id="nav-page">
+                <li><a href="plan_tuyenxe.html">Cập nhật Tuyến xe</a></li>
+                <li class="active"><a href="#">Cập nhật Chuyến xe</a></li>
+            </ul>
+
+            <div class="heading-content">
+                <button class="btn-add-new js-save-infor" type="button">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    Thêm mới
+                </button>
+
+                <div class="search">
+                    <div class="search-container">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    
+                    <button class="search-btn">Tìm</button>
+                </div>
+            </div>
+
+            <table id="content-table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã tuyến</th>
+                        <th>Mã chuyến</th>
+                        <th>Thời gian xuất phát</th>
+                        <th>Thời gian đến</th>
+                        <th>Số hiệu xe</th>
+                        <th>Tài xế</th>
+                        <th>Sửa</th>
+                        <th>Xóa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>HNH</td>
+                        <td>HNH001</td>
+                        <td>7:00 AM<br>17/04/2024</td>
+                        <td>6:00 PM<br>17/04/2024</td>
+                        <td>XH1234</td>
+                        <td>TX001</td>
+                        <td class="icon"><button class="btn btn-edit"><i class="fas fa-edit"></i></button></td>
+                        <td class="icon"><button class="btn btn-delete"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>HNH</td>
+                        <td>HNH002</td>
+                        <td>8:00 AM<br>25/04/2024</td>
+                        <td>7:00 PM<br>25/04/2024</td>
+                        <td>XH235</td>
+                        <td>TX005</td>
+                        <td class="icon"><button class="btn btn-edit"><i class="fas fa-edit"></i></button></td>
+                        <td class="icon"><button class="btn btn-delete"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>HHN</td>
+                        <td>HNH003</td>
+                        <td>9:00 AM<br>30/04/2024</td>
+                        <td>8:00 PM<br>30/04/2024</td>
+                        <td>XH1236</td>
+                        <td>TX003</td>
+                        <td class="icon"><button class="btn btn-edit"><i class="fas fa-edit"></i></button></td>
+                        <td class="icon"><button class="btn btn-delete"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>HDN<td>HDN001</td>
+                        <td>6:00 AM<br>17/04/2024</td>
+                        <td>9:00 AM<br>17/04/2024</td>
+                        <td>XH1237</td>
+                        <td>TX004</td>
+                        <td class="icon"><button class="btn btn-edit"><i class="fas fa-edit"></i></button></td>
+                        <td class="icon"><button class="btn btn-delete"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>HDN</td>
+                        <td>HDN002</td>
+                        <td>7:00 AM<br>17/04/2024</td>
+                        <td>10:00 AM<br>17/04/2024</td>
+                        <td>XH1238</td>
+                        <td>TX001</td>
+                        <td class="icon"><button class="btn btn-edit"><i class="fas fa-edit"></i></button></td>
+                        <td class="icon"><button class="btn btn-delete"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>HNDN</td>
+                        <td>HNDN001</td>
+                        <td>5:00 AM<br>17/04/2024</td>
+                        <td>6:00 AM<br>17/04/2024</td>
+                        <td>XH1234</td>
+                        <td>TX003</div>
+                        </td>
+                        <td class="icon"><button class="btn btn-edit"><i class="fas fa-edit"></i></button></td>
+                        <td class="icon"><button class="btn btn-delete"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="report">
+                <button class="btn-report" type="button">Xuất báo cáo</button>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p><strong>Về chúng tôi</strong></p>
+                    <p>Tuyển dụng</p>
+                    <p>Tin tức</p>
+                    <p>Giới thiệu</p>
+                   
+                </div>
+                <div class="support">
+                <p><strong>Hỗ trợ</strong></p>
+                    <p>Hướng dẫn đăng kí</p>
+                    <p>Câu hỏi thường gặp</p>
+                    <p>Phần mềm đặt xe</p>
+                </div>
+                <div class="address">
+                    <p class="address">123 Street Name, City, State, ZIP</p>
+                    <p class="email">Email: example@email.com</p>
+                    <p class="phone">Phone: (123) 456-7890</p>
+                </div>
+              
+                <div class="social-media">
+                    <strong><p>Kết nối</p></strong>
+                    <i class="fab fa-instagram"></i> 
+                    <i class="fab fa-twitter"></i> 
+                    <i class="fab fa-youtube"></i> 
+                </div>
+                    <!-- Add social media icons as needed -->
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2021 eDanang Coaching Management System - All rights reserved</p>
+            </div>
+        </div>
+
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <header class="modal-header">
+                    <i class="fa fa-bus" aria-hidden="true"></i>
+                    Cập nhật Chuyến xe
+                </header>
+                <div class="modal-body">
+                    <label for="" class="modal-label">Mã Tuyến: </label>
+                    <div class="custom-combobox-container">
+                        <select class="custom-combobox">
+                            <option value="option1">HNH</option>
+                            <option value="option2">HNHCM</option>
+                            <option value="option3">GLDN</option>
+                            <option value="option4">HDN</option>
+                            <option value="option5">HNDN</option>
+                        </select>
+                    </div>
+    
+                    <label for="" class="modal-label">Tên Chuyến: </label>
+                    <input type="text" class="modal-input">
+    
+                    <label for="" class="modal-label">Thời gian xuất phát: </label>
+                    <input type="datetime-local" class="modal-input">
+    
+                    <label for="" class="modal-label">Thời gian đến: </label>
+                    <input type="datetime-local" class="modal-input">
+    
+                    <label for="" class="modal-label">Số hiệu xe: </label>
+                    <div class="custom-combobox-container">
+                        <select class="custom-combobox">
+                            <option value="option1">XH1234</option>
+                            <option value="option2">XH1235</option>
+                            <option value="option3">XH1236</option>
+                            <option value="option4">XH1237</option>
+                            <option value="option5">XH1238</option>
+                        </select>
+                    </div>
+    
+                    <label for="" class="modal-label">ID Tài xế: </label>
+                    <div class="custom-combobox-container">
+                        <select class="custom-combobox">
+                            <option value="option1">TX001</option>
+                            <option value="option2">TX002</option>
+                            <option value="option3">TX003</option>
+                            <option value="option4">TX004</option>
+                            <option value="option5">TX005</option>
+                        </select>
+                    </div>
+    
+                    <button id="save-btn">
+                        Lưu
+                        <i class="fa fa-floppy" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div><div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <header class="modal-header">
+                    <i class="fa fa-bus" aria-hidden="true"></i>
+                    Cập nhật Chuyến xe
+                </header>
+                <div class="modal-body">
+                    <label for="" class="modal-label">Mã Tuyến: </label>
+                    <div class="custom-combobox-container">
+                        <select class="custom-combobox">
+                            <option value="option1">HNH</option>
+                            <option value="option2">HNHCM</option>
+                            <option value="option3">GLDN</option>
+                            <option value="option4">HDN</option>
+                            <option value="option5">HNDN</option>
+                        </select>
+                    </div>
+    
+                    <label for="" class="modal-label">Tên Chuyến: </label>
+                    <input type="text" class="modal-input">
+    
+                    <label for="" class="modal-label">Thời gian xuất phát: </label>
+                    <input type="datetime-local" class="modal-input">
+    
+                    <label for="" class="modal-label">Thời gian đến: </label>
+                    <input type="datetime-local" class="modal-input">
+    
+                    <label for="" class="modal-label">Số hiệu xe: </label>
+                    <div class="custom-combobox-container">
+                        <select class="custom-combobox">
+                            <option value="option1">XH1234</option>
+                            <option value="option2">XH1235</option>
+                            <option value="option3">XH1236</option>
+                            <option value="option4">XH1237</option>
+                            <option value="option5">XH1238</option>
+                        </select>
+                    </div>
+    
+                    <label for="" class="modal-label">ID Tài xế: </label>
+                    <div class="custom-combobox-container">
+                        <select class="custom-combobox">
+                            <option value="option1">TX001</option>
+                            <option value="option2">TX002</option>
+                            <option value="option3">TX003</option>
+                            <option value="option4">TX004</option>
+                            <option value="option5">TX005</option>
+                        </select>
+                    </div>
+    
+                    <button id="save-btn">
+                        Lưu
+                        <i class="fa fa-floppy" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+    </div>
+
+    
+
+</body>
+</html>

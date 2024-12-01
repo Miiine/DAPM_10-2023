@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Page</title>
+    <link rel="icon" href="imgs/head-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="plan.css">
+    <script src="plan.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo-container">
+                <img src="imgs/logo-bxdn-.png" alt="Ảnh logo bến xe ĐN nè" id="logo-img">
+                <h1 id="page-name">Coach management</h1>
+                <img src="imgs/user-icon.png" alt="Ảnh user nè" id="user-img">
+                <a href="#" id="user-name">Nx001</a>
+            </div>
+
+            <ul id="nav">
+                <li><a href="register.html">Đăng ký đỗ xe</a></li>
+                <li><a href="#">Thông tin nhà xe</a></li>
+                <li class="active"><a href="#">Cập nhật lịch trình</a></li>
+                <li><a href="#">Quản lý xe</a></li>
+                <li><a href="#">Quản lý tài xế</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div id="content-name">
+                <h1>Cập nhật lịch trình</h1>
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+            </div>
+
+            <ul id="nav-page">
+                <li class="active"><a href="#">Cập nhật Tuyến xe</a></li>
+                <li><a href="plan_chuyenxe.html">Cập nhật Chuyến xe</a></li>
+            </ul>
+
+            <div class="heading-content">
+                <button class="btn-add-new js-save-infor" type="button">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    Thêm mới
+                </button>
+
+                <div class="search">
+                    <div class="search-container">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    
+                    <button class="search-btn">Tìm</button>
+                </div>
+            </div>
+            
+            
+            <div class="filter-container">
+                <div class="filter-combobox-container">
+                    <select class="filter-combobox">
+                        <option value="option1">Xe 16 chỗ</option>
+                        <option value="option2">Xe 24 chỗ</option>
+                        <option value="option3">Xe giường nằm</option>
+                        <option value="option4">Xe limousine</option>
+                    </select>
+                </div>
+
+                <div class="filter-combobox-container">
+                    <select class="filter-combobox">
+                        <option value="option1">Xe 16 chỗ</option>
+                        <option value="option2">Xe 24 chỗ</option>
+                        <option value="option3">Xe giường nằm</option>
+                        <option value="option4">Xe limousine</option>
+                    </select>
+                </div>
+
+                <div class="filter-combobox-container">
+                    <select class="filter-combobox">
+                        <option value="option1">Xe 16 chỗ</option>
+                        <option value="option2">Xe 24 chỗ</option>
+                        <option value="option3">Xe giường nằm</option>
+                        <option value="option4">Xe limousine</option>
+                    </select>
+                </div>
+            </div>
+            
+            
+            <table id="content-table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã tuyến</th>
+                        <th>Tên tuyến</th>
+                        <th>Loại tuyến</th>
+                        <th>Thời gian</th>
+                        <th>Giá vé</th>
+                        <th>Điểm dừng</th>
+                        <th>Sửa</th>
+                        <th>Xóa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>HNH</td>
+                        <td>Hà Nội - Huế</td>
+                        <td>Xe 16 chỗ</td>
+                        <td>12h - 14h</td>
+                        <td>500.000 đ/lượt</td>
+                        <td>Vinh, Quảng Bình</td>
+                        <td class="icon"><button class="btn btn-edit"><i class="fas fa-edit"></i></button></td>
+                        <td class="icon"><button class="btn btn-delete"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>HNHCM</td>
+                        <td>Hà Nội - TPHCM</td>
+                        <td>Xe 24 chỗ</td>
+                        <td>25h - 26h</td>
+                        <td>800.000 đ/lượt</td>
+                        <td>Đăk Lăk, Đà Nẵng</td>
+                        <td><button class="btn btn-edit"><i class="fas fa-edit"></i></button></td>
+                        <td><button class="btn btn-delete"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>GLDN</td>
+                        <td>Gia Lai - Đà Nẵng</td>
+                        <td>Xe giường nằm</td>
+                        <td>10h - 11h</td>
+                        <td>400.000 đ/lượt</td>
+                        <td>Bình Định</td>
+                        <td><button class="btn btn-edit"><i class="fas fa-edit"></i></button></td>
+                        <td><button class="btn btn-delete"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>HDN</td>
+                        <td>Huế - Đà Nẵng</td>
+                        <td>Xe limousine</td>
+                        <td>2h</td>
+                        <td>150.000 đ/lượt</td>
+                        <td></td>
+                        <td><button class="btn btn-edit"><i class="fas fa-edit"></i></button></td>
+                        <td><button class="btn btn-delete"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>HNDN</td>
+                        <td>Hà Nội - Đà Nẵng</td>
+                        <td>Xe 16 chỗ</td>
+                        <td>17h</td>
+                        <td>600.000 đ/lượt</td>
+                        <td>Vinh, Quảng Bình</td>
+                        <td><button class="btn btn-edit"><i class="fas fa-edit"></i></button></td>
+                        <td><button class="btn btn-delete"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="report">
+                <div class="searchID-container">
+                    <input type="text" id="searchID-input" placeholder="Nhập ID Tuyến xe">
+                    <button id="searchID-button">Chọn</button>
+                </div>
+                <button class="btn-report" type="button">Xuất báo cáo</button>
+                <button class="btn-report" type="button">Xuất báo cáo</button>
+            </div>
+            
+        </div>
+
+        <div id="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p><strong>Về chúng tôi</strong></p>
+                    <p>Tuyển dụng</p>
+                    <p>Tin tức</p>
+                    <p>Giới thiệu</p>
+                   
+                </div>
+                <div class="support">
+                <p><strong>Hỗ trợ</strong></p>
+                    <p>Hướng dẫn đăng kí</p>
+                    <p>Câu hỏi thường gặp</p>
+                    <p>Phần mềm đặt xe</p>
+                </div>
+                <div class="address">
+                    <p class="address">123 Street Name, City, State, ZIP</p>
+                    <p class="email">Email: example@email.com</p>
+                    <p class="phone">Phone: (123) 456-7890</p>
+                </div>
+              
+                <div class="social-media">
+                    <strong><p>Kết nối</p></strong>
+                    <i class="fab fa-instagram"></i> 
+                    <i class="fab fa-twitter"></i> 
+                    <i class="fab fa-youtube"></i> 
+                </div>
+                    <!-- Add social media icons as needed -->
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2021 eDanang Coaching Management System - All rights reserved</p>
+            </div>
+        </div>
+
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <header class="modal-header">
+                    <i class="fa fa-bus" aria-hidden="true"></i>
+                    Cập nhật Tuyến xe
+                </header>
+                <div class="modal-body">
+                    <label for="" class="modal-label">Mã Tuyến: </label>
+                    <input type="text" class="modal-input">
+    
+                    <label for="" class="modal-label">Tên Tuyến: </label>
+                    <input type="text" class="modal-input">
+    
+                    <label for="" class="modal-label">Loại Tuyến: </label>
+                    <div class="custom-combobox-container">
+                        <select class="custom-combobox">
+                            <option value="option1">Xe 16 chỗ</option>
+                            <option value="option2">Xe 24 chỗ</option>
+                            <option value="option3">Xe giường nằm</option>
+                            <option value="option4">Xe limousine</option>
+                        </select>
+                    </div>
+    
+                    <label for="" class="modal-label">Thời gian: </label>
+                    <input type="text" class="modal-input">
+    
+                    <label for="" class="modal-label">Giá vé: </label>
+                    <input type="text" class="modal-input">
+    
+                    <label for="" class="modal-label">Điểm dừng: </label>
+                    <input type="text" class="modal-input">
+    
+                    <button id="save-btn">
+                        Lưu
+                        <i class="fa fa-floppy" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+
+</body>
+</html>
